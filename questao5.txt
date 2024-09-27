@@ -1,0 +1,32 @@
+5) Você está em uma sala com três interruptores, cada um conectado a uma lâmpada em salas diferentes. Você não pode ver as lâmpadas da sala em que está, 
+mas pode ligar e desligar os interruptores quantas vezes quiser. Seu objetivo é descobrir qual interruptor controla qual lâmpada. 
+Como você faria para descobrir, usando apenas duas idas até uma das salas das lâmpadas, qual interruptor controla cada lâmpada?
+
+Reposta:
+
+Considerando apenas o cenário apresentado eu conseguiria determinar cada interruptor apenas da seguinte forma:
+1- Ligo um dos interruptores;
+2- Entro em uma das salas;
+3- Dou sorte da sala estar com a lâmpada acesa, definindo assim um dos interruptores;
+4- Volto para a sala de interruptores e ligo algum dos outros dois interruptores;
+5- Entro em outra das duas salas restantes;
+6- Se a lâmpada estiver acessa, o interruptor que liguei controla essa sala e o último controla a última sala;
+7- Se a lâmpada estiver apagada, o interruptor que liguei controla a última sala e o último interruptor controla esta sala.
+
+Porém neste caso o passo 3 pode falhar e a sala que eu entrei vai estar com a lâmpada desligada, o que impossibilitaria de definir com precisão a ligação de todos os interruptores.
+Poderia definir apenas um com certeza, saberia que o interruptor que liguei controla alguma das duas salas restantes, poderia então verificar outra sala para definir, mas os outros dois não seria possível.
+
+Agora considerando que as lâmpadas deixam algum indício de que foram acessas, como por exemplo, o calor delas após um tempo ligadas, eu poderia definir com exatidão em todos os casos:
+1- Ligo um dos interruptores e deixo ligado por um tempo;
+2- Desligo este interruptor e ligo outro qualquer;
+3- Entro em uma das salas;
+4- Se a lâmpada estiver acessa, sigo os passos que descrevi anteriormente para definir os interruptores;
+5- Se a lâmpada estiver apagada, encosto nela e verifico se está quente ou fria;
+
+6a- Se estiver quente, significa que o primeiro interruptor que liguei controla ela;
+7a - Volto e verifico outra sala para definir os interruptores restantes 
+(Se estiver acesa, o segundo interruptor que liguei controla ela e o último controla a sala restante, caso contrário o segundo que liguei controla a sala restante e o último controla esta sala que entrei).
+
+6b - Se estiver fria, significa que o interruptor que não foi ligado controla esta sala;
+7b - Volto e verifico outra sala para definir os interruptores restantes.
+(Se estiver acesa, o segundo interruptor controla ela e o primeiro controla a sala restante, caso contrário o segundo que liguei controla a sala restante e o primeiro controla a sala que entrei).
